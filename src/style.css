@@ -1,0 +1,49 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #aaaaaa9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*sombras*/
+    overflow: hidden; /*El contenido que desborda el contenedor se oculta y no es visible.*/
+    width: 300px;
+    border: solid;
+}
+
+#display {
+    background-color: #eee;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    border: none; /* Elimina el borde predeterminado */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0; /* Elimina el margen predeterminado */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+    outline: none; /* Oculta el contorno de selección */
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    border: none;
+    background-color: #f4f4f4;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #ddd;
+}
