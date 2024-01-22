@@ -8,8 +8,7 @@
 </head>
 <body>
     <div id="calculator">
-        <input type="text" id="display" value="" placeholder="0"
-        readonly>
+        <input type="text" id="display" value="" placeholder="0" readonly>
         <div id="buttons">
             <button onclick="agregarPantalla('7')">7</button>
             <button onclick="agregarPantalla('8')">8</button>
@@ -27,9 +26,10 @@
             <button onclick="agregarPantalla('.')">.</button>
             <button onclick="calcular()">=</button>
             <button onclick="agregarPantalla('+')">+</button>
-            <button onclick="borrarTodo()">C</button>
+            <button class="c" onclick="borrarTodo()">C</button>
         </div>
     </div>
     <script src="src/script.js"></script>
 </body>
 </html>
+

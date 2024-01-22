@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #aaaaaa9d;
@@ -13,10 +11,10 @@ body {
 #calculator {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*sombras*/
-    overflow: hidden; /*El contenido que desborda el contenedor se oculta y no es visible.*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     width: 300px;
-    border: solid;
+    max-width: 80%; /* Ajuste del ancho para dispositivos móviles */
 }
 
 #display {
@@ -24,16 +22,18 @@ body {
     padding: 10px;
     text-align: right;
     font-size: 1.5em;
-    border: none; /* Elimina el borde predeterminado */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin: 0; /* Elimina el margen predeterminado */
-    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
-    outline: none; /* Oculta el contorno de selección */
+    border: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
 #buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 8px; /* Espaciado entre los botones */
+    padding: 8px; /* Espaciado interno */
 }
 
 button {
@@ -42,8 +42,14 @@ button {
     padding: 15px;
     font-size: 1.2em;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:active {
     background-color: #ddd;
+}
+
+/* Estilo específico para el botón C */
+button.c {
+    grid-column: 4; /* Este botón ocupa 2 columnas */
 }
