@@ -41,3 +41,8 @@ function calcular(){
 
     }
 }
+
+function borrarUltimo(){
+    console.log("Borrar ultimo!");
+    document.getElementById('display').value = document.getElementById('display').value.slice(0, -1);
+}
